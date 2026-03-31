@@ -19,7 +19,7 @@ void repl(struct Table* table)
         else if (strncmp(input, "insert", 6) == 0)
         {
             struct Row row;
-            printf("Eneter the id, name and email");
+            printf("Eneter the id, name and email \n");
             sscanf(input, "insert %d %s %s", &row.id, row.userName, row.email);
 
             insert_row(table, row);
