@@ -7,7 +7,7 @@ void repl(struct Table* table);
 int main()
 {
     struct Table table;
-    initialize_table(&table);
+    initializeTable(&table);
     repl(&table);
 
     return 0;

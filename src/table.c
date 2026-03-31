@@ -2,12 +2,12 @@
 #include "../include/row.h"
 #include "../include/table.h"
 
-void initialize_table(struct Table* table)
+void initializeTable(struct Table* table)
 {
     table->rowCount = 0;
 }
 
-void insert_row(struct Table* table, struct Row row)
+void insertRow(struct Table* table, struct Row row)
 {
     if(table->rowCount >= MAX_ROWS)
         printf("Its full");
@@ -17,7 +17,7 @@ void insert_row(struct Table* table, struct Row row)
     }
 }
 
-void select_rows(struct Table* table)
+void selectRows(struct Table* table)
 {
     for(int i = 0; i < table->rowCount; i++)
     {

@@ -36,6 +36,8 @@ void repl(struct Table* table)
         else if (strncmp(input, "insert", 6) == 0)
         {
             struct Row row;
+            cleanRow(&row);
+
             printf("Eneter the id, name and email \n");
             sscanf(input, "insert %d %s %s", &row.id, row.userName, row.email);
 
@@ -47,12 +49,12 @@ void repl(struct Table* table)
                 printf("Too few args\n");
             if(countArgs == 3)
             {
-                insert_row(table, row);
+                insertRow(table, row);
                 printf("Executed.\n");
             }
         }
         else if (strcmp(input, "select") == 0)
-            select_rows(table);
+            selectRows(table);
         else
             printf("Unrecognized command: %s\n", input);
     }
