@@ -2,7 +2,6 @@
 #include "../include/row.h"
 #include "../include/table.h"
 
-
 void initialize_table(struct Table* table)
 {
     table->rowCount = 0;
@@ -21,5 +20,8 @@ void insert_row(struct Table* table, struct Row row)
 void select_rows(struct Table* table)
 {
     for(int i = 0; i < table->rowCount; i++)
-        printf("%d %s %s\n", table->rows[i].id, table->rows[i].userName, table->rows[i].email);
+    {
+        struct Row* row = get_row_at_index(table, i);
+        printRow(row);
+    }
 }

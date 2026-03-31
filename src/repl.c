@@ -37,7 +37,7 @@ void repl(struct Table* table)
         {
             struct Row row;
             printf("Eneter the id, name and email \n");
-            ifsscanf(input, "insert %d %s %s", &row.id, row.userName, row.email);
+            sscanf(input, "insert %d %s %s", &row.id, row.userName, row.email);
 
             int countArgs = numOfArgs(input);
 
