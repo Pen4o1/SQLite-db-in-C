@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "row.h"
-#include "table.h"
+#include "../include/row.h"
+#include "../include/table.h"
 
 
 void initialize_table(struct Table* table)

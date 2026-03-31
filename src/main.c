@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "table.h"
-#include "row.h"
+#include "../include/table.h"
+#include "../include/row.h"
 
 void repl(struct Table* table);
 

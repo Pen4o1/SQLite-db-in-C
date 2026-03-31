@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include "table.h"
-#include "row.h"
+#include "../include/table.h"
+#include "../include/row.h"
 
 
 int numOfArgs(char* str)
